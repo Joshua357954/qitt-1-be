@@ -4,7 +4,7 @@ const { firestore } = require('../firebase.js');
 const { collection, query, where,or, getDocs, getDoc, addDoc, doc, updateDoc , orderBy, startAt, endAt } = require('firebase/firestore');
 
 const usersCollection = collection(firestore, 'users');
-const userDataApi = "http://localhost:3000";
+const userDataApi = process.env.NODE_ENV === 'production' ? 'https://csc-rttj.onrender.com/' : 'http://localhost:3000';
 
 
 
