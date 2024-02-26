@@ -1,0 +1,65 @@
+Required Auth Fields :
+	User:
+		School :
+			country
+			State
+			location
+			schoolName
+			year (session = 2022/2023)
+			faculty
+			department(course)
+			degree
+			matriculationNumber
+
+		PersonalInfo :
+			name
+			nickName/username
+			email
+			profilePixUrl
+			bio
+			phone
+			gender
+			verificationLink
+			monitized
+			ip address
+			notification token (from chrome)
+
+
+		Reward / Cash :
+			Reward Balance
+			monitizationBalance
+
+		Badges :
+			verified
+			badgeName
+
+	
+	Schools DB:
+		list of schools with id
+
+	Faculty DB:
+		list of faculties
+
+	Lecturers DB: 
+		List of Lecturere and the subject they are teaching
+
+	Department DB:
+		list of Departments
+
+		Excos DB:
+			list of excos
+
+		List of Students
+
+
+	Courses DB (Subjects):
+		list of courses
+
+		Course Outline DB:
+			list of courses to be learnt 
+
+	Years (Level) DB:
+		list of school years
+
+	Quiz DB:
+		list of quiz's for every course
