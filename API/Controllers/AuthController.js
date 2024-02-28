@@ -129,6 +129,7 @@ const createUserInFirestore = async (studentData, values, update = false, Id = 0
       department: studentData.department,
       session: studentData.admissionSession,
       imageUrl:studentData.picture,
+      regNumber:studentData.registrationNo,
       courseName: courseShortForms[studentData.department.toLowerCase()]
     };
 
@@ -160,6 +161,7 @@ function formatUserData(studentData) {
     department: studentData.department,
     session: studentData.admissionSession,
     imageUrl:studentData.picture,
+    regNumber:studentData.registrationNo,
     courseName: courseShortForms[studentData.department.toLowerCase()]
   };
 }

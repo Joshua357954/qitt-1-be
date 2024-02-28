@@ -1,33 +1,31 @@
-// userController.js
-const { usersCollection } = require('../firebase.js')
+const { firestore } = require('../firebase.js');
+const { collection, query, where,or, getDocs, getDoc, addDoc, doc, updateDoc , orderBy, startAt, endAt } = require('firebase/firestore');
 
-// Get User
+const usersCollection = collection(firestore, 'users');
 
-async function getUser(req, res) {
+async function getUsers(req, res) {
   try {
-    const { userId } = req.params;
-
-    // Check if the user exists in Firestore using userId as id, username, or tag
-    const userQuery = await usersCollection.where('id', '==', userId)
-      .orWhere('username', '==', userId)
-      .orWhere('tag', '==', userId)
-      .get();
-
-    if (!userQuery.empty) {
-      // If user is found, return user data
-      const userData = userQuery.docs[0].data();
-      res.json({ message: 'User found', user: userData });
-    } else {
-      // If user is not found, return 404 status
-      res.status(404).json({ message: 'User not found' });
-    }
+    const { department } = req.params;
+    console.log(department, ' loading ...')
+    
+    // Create a query to get all documents from the users collection
+    const querySnapshot = await getDocs(usersCollection);
+    // console.log(querySnapshot)
+    
+    // Extract and filter data from the snapshot based on the search condition
+    const users = querySnapshot.docs
+      .filter((doc) => doc.data().department == department)
+      .map((doc) => ({ id: doc.id, name:doc.data().otherNames, imgUrl:doc.data().picture }));
+    console.log("Users:", users)
+    // Send the matching users as a response
+    res.json([...users]);
   } catch (err) {
     // Handle errors
     console.error(err);
-    res.status(500).json({ error: 'Error getting user', details: err.message });
+    res.status(500).json({ error: 'Error searching for users', details: err.message });
   }
 }
 
 module.exports = { 
-  getUser,
+  getUsers,
 };
