@@ -1,7 +1,12 @@
 
+const GES101 = require('../Utils/ges101.json')
+const GES103 = require('../Utils/ges103.json')
 
 //Quiz Data
-const quizData = require('../Utils/GES103PastQuestion.json'); 
+const quizData = {
+                  'ges101': GES101,
+                  'ges103': GES103
+                } 
 
 // Function to shuffle an array
 function shuffleArray(array) {
@@ -17,9 +22,10 @@ function shuffleArray(array) {
 
 async function startQuiz (req, res)  {
   const { subject, numberOfQuestions } = req.params;
+  console.log('Subject : ',subject)
 
   // Shuffle quiz questions
-  const shuffledQuizData = shuffleArray(quizData.questions);
+  const shuffledQuizData = shuffleArray(quizData[subject].questions);
 
   // Take only the specified number of questions
   const selectedQuestions = shuffledQuizData.slice(0, numberOfQuestions);
@@ -32,15 +38,11 @@ async function startQuiz (req, res)  {
 
 // Controller to submit answers
 function submitQuizAnswers (req, res)  {
-    const { totalQuestions, answers:userAnswers } = req.body;
-    //   { id:1,answer: 'ball' }
-    //   const correctAnswers = quizData.questions.map(question => question.correct_answer)
-
-
+  const { subject, totalQuestions, answers:userAnswers } = req.body;
 
   // Compare user answers with correct answers
   const results = Object.keys(userAnswers).map((qid,index) => {
-    const question = quizData.questions.find(data => data.id == qid)
+    const question = quizData[subject].questions.find(data => data.id == qid)
 
     console.log(question)
     return {
@@ -50,14 +52,6 @@ function submitQuizAnswers (req, res)  {
             isCorrect: userAnswers[qid] == question.correct_answer
         }
   })
-
-
-//   const results = userAnswers.map((answer, index) => ({
-//     question: index + 1,  
-//     userAnswer: answer,
-//     correctAnswer: correctAnswers[index],
-//     isCorrect: answer === correctAnswers[index],
-//   }));
 
   // Calculate score
   const score = results.reduce((total, result) => total + (result.isCorrect ? 1 : 0), 0);

@@ -6,7 +6,7 @@ async function getTimetableByDay(req, res) {
     const { departmentId, yearId, day } = req.params;
   
     try {
-      const timetableRef = doc(firestore, 'timetables', departmentId, 'years', yearId);
+      const timetableRef = doc(firestore, 'timetables', departmentId, 'years', yearId+'00');
       const docSnapshot = await getDoc(timetableRef);
   
       if (docSnapshot.exists()) {
@@ -29,12 +29,15 @@ async function getAllTimetables(req, res) {
     const { departmentId, yearId } = req.params;
   
     try {
-      const timetableRef = doc(firestore, 'timetables', departmentId, 'years', yearId);
+      const timetableRef = doc(firestore, 'timetables', departmentId, 'years', yearId+'00');
       const docSnapshot = await getDoc(timetableRef);
-  
+      
+      // console.log("Timetable .....ing .....")
       if (docSnapshot.exists()) {
         const allTimetables = docSnapshot.data().timetable || [];
-  
+
+        // console.log('Timetable : ', allTimetables)
+
         const days = ['MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY']; 
 
         const structuredTimetables = days.map(day => ({
@@ -97,7 +100,7 @@ async function addTimetableEntries(departmentId, yearId, newTimetableEntries) {
   }
 }
 
-// console.log( addTimetableEntries('computer_science','100',timetableToAdd) )
+// console.log( addTimetableEntries('computer_science','200',timetableToAdd) )
 
 module.exports = {
   getAllTimetables,

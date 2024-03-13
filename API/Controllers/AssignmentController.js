@@ -9,7 +9,7 @@ const getAssignmentsByYear = async (req, res) => {
       // Ensure that the 'department' variable is set correctly
       console.log('Department:', department);
   
-      const assignmentsDoc = doc(firestore, 'assignment', department, 'year', year);
+      const assignmentsDoc = doc(firestore, 'assignment', department, 'year', year+'00');
       const assignmentsDocSnapshot = await getDoc(assignmentsDoc);
   
       if (assignmentsDocSnapshot.exists()) {
@@ -111,12 +111,12 @@ const adAssignment = async (department, year, assignmentData) => {
 //     `,
 //     contentType: 'text',
 //     dateGiven: new Date('2024-02-19'),
-//     postedBy: 'Qiit',
+//     postedBy: 'Qitt',
 //     deadline: new Date('2024-03-04'),
 //   };
   
   
-//   adAssignment('computer_science','100',assignmentData)
+  // adAssignment('computer_science','200',assignmentData)
 
 
 module.exports = {
