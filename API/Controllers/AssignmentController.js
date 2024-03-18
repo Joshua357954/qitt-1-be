@@ -116,6 +116,15 @@ const adAssignment = async (department, year, assignmentData) => {
 //   };
   
   
+const assignmentData = {
+  "subject": "CSC 283.1",
+  "content": "With the aid of a diagram, draw and explain a file in words with 10 bank records. Using the index sequential file access, retrieve one of the records of your choice. On a fullscap to be submitted by March 8th and to be defended as well!",
+  "contentType": "text",
+  "dateGiven": "2024-03-05",
+  "postedBy": "Qitt",
+  "deadline": "2024-03-08"
+}
+
   // adAssignment('computer_science','200',assignmentData)
 
 

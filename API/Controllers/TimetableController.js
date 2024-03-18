@@ -42,7 +42,7 @@ async function getAllTimetables(req, res) {
         const days = ['MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY']; 
 
         const structuredTimetables = days.map(day => ({
-          [day]: allTimetables.filter(entry => entry.day === day.toLocaleLowerCase())
+          [day]: allTimetables.filter(entry => entry.day.toLocaleLowerCase() === day.toLocaleLowerCase())
         }));
 
         console.log(structuredTimetables)
