@@ -1,7 +1,8 @@
 {
     "questions": [
       {
-        "question": "What is the output of the following program?\nProgram ForDO;\nVar X: integer;\nBegin\n  For X:= 1 DOWNTO-4 DO\n  Begin\n    Y:= (5* (SQ(X) +3* X -10);\n    Writeir (Y).\n  End;\nEnd.",
+        "question": "What is the output of the following program?",
+        "code_snippet": "Program ForDO;\nVar X, Y: integer;\nBegin\n  For X:= 1 DOWNTO -4 DO\n  Begin\n    Y:= (5 * (X * X) + 3 * X - 10);\n    Writeln(Y);\n  End;\nEnd.",
         "options": [
           "a. -33, -52, -67, -78",
           "b. Error: SQ(X) is not defined",
@@ -166,7 +167,8 @@
         "id": 15
       },
       {
-        "question": "What is the output of the following Pascal code?\nProgram Test;\nVar a, b: integer;\nBegin\n  a := 5;\n  b := 10;\n  if (a > b) then\n    Write ('Hello')\n  else\n    Write ('World');\nEnd.",
+        "question": "What is the output of the following Pascal code?",
+        "code_snippet": "Program Test;\nVar a, b: integer;\nBegin\n  a := 5;\n  b := 10;\n  if (a > b) then\n    Write ('Hello')\n  else\n    Write ('World');\nEnd.",
         "options": [
           "a. World",
           "b. Hello",
@@ -174,7 +176,7 @@
           "d. No output"
         ],
         "correct_answer": "a. World",
-        "id": 16
+        "id": 16  
       },
       {
         "question": "Which keyword is used to terminate a program in Pascal?",
@@ -365,7 +367,8 @@
         "id": 33
       },
       {
-        "question": "What is the output of the following Pascal code?\nProgram Test;\nVar x, y: integer;\nBegin\n  x := 10;\n  y := 20;\n  if x > y then\n    write(x)\n  else\n    write(y);\nEnd.",
+        "question": "What is the output of the following Pascal code?",
+        "code_snippet": "Program Test;\nVar x, y: integer;\nBegin\n  x := 10;\n  y := 20;\n  if x > y then\n    write(x)\n  else\n    write(y);\nEnd.",
         "options": [
           "a. 10",
           "b. 20",
@@ -453,7 +456,8 @@
         "id": 41
       },
       {
-        "question": "What is the output of the following Pascal code?\nProgram Test;\nVar x: integer;\nBegin\n  x := 5;\n  write('The value of x is ', x);\nEnd.",
+        "question": "What is the output of the following Pascal code?",
+        "code_snippet": "Program Test;\nVar x: integer;\nBegin\n  x := 5;\n  write('The value of x is ', x);\nEnd.",
         "options": [
           "a. The value of x is 5",
           "b. 5",
@@ -486,7 +490,8 @@
         "id": 44
       },
       {
-        "question": "What is the output of the following Pascal code?\nProgram Test;\nBegin\n  writeln('Hello, World!');\nEnd.",
+        "question": "What is the output of the following Pascal code?",
+        "code_snippet": "Program Test;\nBegin\n  writeln('Hello, World!');\nEnd.",
         "options": [
           "a. Hello, World!",
           "b. Error: 'writeln' procedure not defined",
