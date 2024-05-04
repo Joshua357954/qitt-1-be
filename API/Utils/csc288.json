@@ -1,0 +1,614 @@
+{
+    "questions": [
+      {
+        "question": "What is the output of the following program?\nProgram ForDO;\nVar X: integer;\nBegin\n  For X:= 1 DOWNTO-4 DO\n  Begin\n    Y:= (5* (SQ(X) +3* X -10);\n    Writeir (Y).\n  End;\nEnd.",
+        "options": [
+          "a. -33, -52, -67, -78",
+          "b. Error: SQ(X) is not defined",
+          "c. No output",
+          "d. Error: \"Writeir\" is not a defined procedure"
+        ],
+        "correct_answer": "b. Error: SQ(X) is not defined",
+        "id": 1
+      },
+      {
+        "question": "What type of validation check is being performed by the ForDo loop?",
+        "options": [
+          "a. Range check",
+          "b. Length check",
+          "c. Format check",
+          "d. Presence check"
+        ],
+        "correct_answer": "a. Range check",
+        "id": 2
+      },
+      {
+        "question": "Which of the following best describes the concept of modular programming?",
+        "options": [
+          "a. Writing code without any structure",
+          "b. Breaking down program functions into modules",
+          "c. Using goto statements extensively",
+          "d. Writing code in a single large function"
+        ],
+        "correct_answer": "b. Breaking down program functions into modules",
+        "id": 3
+      },
+      {
+        "question": "How is a two-dimensional array declared in Pascal?",
+        "options": [
+          "a. ARRAY [1..3, 1..6] of integer;",
+          "b. ARRAY [1..6, 1..3] of integer;",
+          "c. ARRAY [3..6, 1..3] of integer;",
+          "d. ARRAY [1..3, 3..6] of integer"
+        ],
+        "correct_answer": "a. ARRAY [1..3, 1..6] of integer;",
+        "id": 4
+      },
+      {
+        "question": "What is the purpose of the CASE construct in Pascal?",
+        "options": [
+          "a. To perform repetitive tasks",
+          "b. To declare variables",
+          "c. To execute code based on different conditions",
+          "d. To define functions and procedures"
+        ],
+        "correct_answer": "c. To execute code based on different conditions",
+        "id": 5
+      },
+      {
+        "question": "Which of the following statements correctly describes the syntax of a record type declaration in Pascal?",
+        "options": [
+          "a. RECORD {Field1: type; Field2: type}",
+          "b. RECORD [Field1: type; Field2: type]",
+          "c. RECORD <Field1: type; Field2: type>",
+          "d. RECORD Field1: type; Field2: type"
+        ],
+        "correct_answer": "d. RECORD Field1: type; Field2: type",
+        "id": 6
+      },
+      {
+        "question": "What is the general syntax for creating, writing, and accessing the individual elements of a field in a record?",
+        "options": [
+          "a. Field_Name := Value",
+          "b. Variable_Name.Field_Name := Value",
+          "c. Variable_Name := Value",
+          "d. Field_Name [index] := Value"
+        ],
+        "correct_answer": "b. Variable_Name.Field_Name := Value",
+        "id": 7
+      },
+      {
+        "question": "Which looping construct is used to repeat a block of code until a certain condition is met?",
+        "options": [
+          "a. For-do loop",
+          "b. While loop",
+          "c. Repeat-until loop",
+          "d. If-then-else loop"
+        ],
+        "correct_answer": "c. Repeat-until loop",
+        "id": 8
+      },
+      {
+        "question": "What does the FOR loop syntax in Pascal look like?",
+        "options": [
+          "a. for i := 1 to 10 do",
+          "b. for (i = 1; i <= 10; i++)",
+          "c. for i := 1 down to 10 do",
+          "d. for i := 10 to 1 step -1 do"
+        ],
+        "correct_answer": "a. for i := 1 to 10 do",
+        "id": 9
+      },
+      {
+        "question": "Which of the following is NOT a standard data type in Pascal?",
+        "options": [
+          "a. Integer",
+          "b. Real",
+          "c. String",
+          "d. Boolean"
+        ],
+        "correct_answer": "c. String",
+        "id": 10
+      },
+      {
+        "question": "Which of the following is NOT a relational operator in Pascal?",
+        "options": [
+          "a. <",
+          "b. >",
+          "c. =",
+          "d. !="
+        ],
+        "correct_answer": "d. !=",
+        "id": 11
+      },
+      {
+        "question": "What is the purpose of the BREAK statement in Pascal?",
+        "options": [
+          "a. To exit the loop and continue with the next iteration",
+          "b. To terminate the program immediately",
+          "c. To skip the remaining code in the loop and continue with the next iteration",
+          "d. To continue with the next iteration of the loop"
+        ],
+        "correct_answer": "a. To exit the loop and continue with the next iteration",
+        "id": 12
+      },
+      {
+        "question": "Which of the following statements is used to read input from the user in Pascal?",
+        "options": [
+          "a. scan()",
+          "b. readln()",
+          "c. input()",
+          "d. cin >>"
+        ],
+        "correct_answer": "b. readln()",
+        "id": 13
+      },
+      {
+        "question": "What is the purpose of the CONTINUE statement in Pascal?",
+        "options": [
+          "a. To exit the loop and continue with the next iteration",
+          "b. To terminate the program immediately",
+          "c. To skip the remaining code in the loop and continue with the next iteration",
+          "d. To continue with the next iteration of the loop"
+        ],
+        "correct_answer": "d. To continue with the next iteration of the loop",
+        "id": 14
+      },
+      {
+        "question": "Which keyword is used to declare a constant in Pascal?",
+        "options": [
+          "a. var",
+          "b. constant",
+          "c. const",
+          "d. define"
+        ],
+        "correct_answer": "c. const",
+        "id": 15
+      },
+      {
+        "question": "What is the output of the following Pascal code?\nProgram Test;\nVar a, b: integer;\nBegin\n  a := 5;\n  b := 10;\n  if (a > b) then\n    Write ('Hello')\n  else\n    Write ('World');\nEnd.",
+        "options": [
+          "a. World",
+          "b. Hello",
+          "c. Error: Undefined variables",
+          "d. No output"
+        ],
+        "correct_answer": "a. World",
+        "id": 16
+      },
+      {
+        "question": "Which keyword is used to terminate a program in Pascal?",
+        "options": [
+          "a. quit",
+          "b. end",
+          "c. halt",
+          "d. finish"
+        ],
+        "correct_answer": "c. halt",
+        "id": 17
+      },
+      {
+        "question": "What does the 'div' operator do in Pascal?",
+        "options": [
+          "a. Performs division and returns the quotient",
+          "b. Performs integer division and returns the remainder",
+          "c. Performs division and returns the remainder",
+          "d. Performs integer division and returns the quotient"
+        ],
+        "correct_answer": "d. Performs integer division and returns the quotient",
+        "id": 18
+      },
+      {
+        "question": "What is the purpose of the 'mod' operator in Pascal?",
+        "options": [
+          "a. Performs division and returns the quotient",
+          "b. Performs integer division and returns the remainder",
+          "c. Performs division and returns the remainder",
+          "d. Performs integer division and returns the quotient"
+        ],
+        "correct_answer": "b. Performs integer division and returns the remainder",
+        "id": 19
+      },
+      {
+        "question": "Which keyword is used to declare a function in Pascal?",
+        "options": [
+          "a. func",
+          "b. function",
+          "c. def",
+          "d. declare"
+        ],
+        "correct_answer": "b. function",
+        "id": 20
+      },
+      {
+        "question": "In Pascal, what is the purpose of the 'writeln' procedure?",
+        "options": [
+          "a. To read input from the user",
+          "b. To write output to the console followed by a line break",
+          "c. To perform arithmetic calculations",
+          "d. To declare variables"
+        ],
+        "correct_answer": "b. To write output to the console followed by a line break",
+        "id": 21
+      },
+      {
+        "question": "Which data type is used to store characters in Pascal?",
+        "options": [
+          "a. char",
+          "b. string",
+          "c. integer",
+          "d. real"
+        ],
+        "correct_answer": "a. char",
+        "id": 22
+      },
+      {
+        "question": "What does the 'ord' function do in Pascal?",
+        "options": [
+          "a. Converts a real number to an integer",
+          "b. Converts an integer to a real number",
+          "c. Converts a character to its ASCII value",
+          "d. Converts a string to a character array"
+        ],
+        "correct_answer": "c. Converts a character to its ASCII value",
+        "id": 23
+      },
+      {
+        "question": "Which of the following is NOT a valid Pascal identifier?",
+        "options": [
+          "a. my_variable",
+          "b. 123_variable",
+          "c. _variable",
+          "d. variable123"
+        ],
+        "correct_answer": "b. 123_variable",
+        "id": 24
+      },
+      {
+        "question": "What is the purpose of the 'succ' function in Pascal?",
+        "options": [
+          "a. Returns the successor of a numeric value",
+          "b. Returns the length of a string",
+          "c. Returns the sum of two numbers",
+          "d. Returns the absolute value of a number"
+        ],
+        "correct_answer": "a. Returns the successor of a numeric value",
+        "id": 25
+      },
+      {
+        "question": "What does the 'trunc' function do in Pascal?",
+        "options": [
+          "a. Truncates a real number to its integer part",
+          "b. Converts a string to an integer",
+          "c. Rounds a real number to the nearest integer",
+          "d. Converts a character to its ASCII value"
+        ],
+        "correct_answer": "a. Truncates a real number to its integer part",
+        "id": 26
+      },
+      {
+        "question": "Which of the following statements is used to declare a one-dimensional array in Pascal?",
+        "options": [
+          "a. array[1..5] of integer;",
+          "b. array[1..5] integer;",
+          "c. int array[5];",
+          "d. integer[5] array;"
+        ],
+        "correct_answer": "a. array[1..5] of integer;",
+        "id": 27
+      },
+      {
+        "question": "What is the purpose of the 'length' function in Pascal?",
+        "options": [
+          "a. Returns the length of a string",
+          "b. Returns the number of elements in an array",
+          "c. Returns the position of a substring in a string",
+          "d. Returns the absolute value of a number"
+        ],
+        "correct_answer": "a. Returns the length of a string",
+        "id": 28
+      },
+      {
+        "question": "Which of the following is NOT a valid Pascal string declaration?",
+        "options": [
+          "a. 'Hello World'",
+          "b. \"Hello World\"",
+          "c. string[10]",
+          "d. 'A'"
+        ],
+        "correct_answer": "c. string[10]",
+        "id": 29
+      },
+      
+      {
+        "question": "What is the purpose of the 'abs' function in Pascal?",
+        "options": [
+          "a. Computes the absolute value of a number",
+          "b. Computes the square of a number",
+          "c. Computes the cube root of a number",
+          "d. Computes the cube of a number"
+        ],
+        "correct_answer": "a. Computes the absolute value of a number",
+        "id": 30
+      },
+      {
+        "question": "Which of the following operators is used for exponentiation in Pascal?",
+        "options": [
+          "a. ^",
+          "b. **",
+          "c. ^^",
+          "d. //"
+        ],
+        "correct_answer": "a. ^",
+        "id": 31
+      },
+      {
+        "question": "What is the purpose of the 'round' function in Pascal?",
+        "options": [
+          "a. Rounds a real number to the nearest integer",
+          "b. Truncates a real number to its integer part",
+          "c. Computes the square root of a number",
+          "d. Computes the absolute value of a number"
+        ],
+        "correct_answer": "a. Rounds a real number to the nearest integer",
+        "id": 32
+      },
+      {
+        "question": "Which of the following is NOT a valid relational operator in Pascal?",
+        "options": [
+          "a. =",
+          "b. <>",
+          "c. !=",
+          "d. <="
+        ],
+        "correct_answer": "c. !=",
+        "id": 33
+      },
+      {
+        "question": "What is the output of the following Pascal code?\nProgram Test;\nVar x, y: integer;\nBegin\n  x := 10;\n  y := 20;\n  if x > y then\n    write(x)\n  else\n    write(y);\nEnd.",
+        "options": [
+          "a. 10",
+          "b. 20",
+          "c. Error: 'x' and 'y' are not defined",
+          "d. No output"
+        ],
+        "correct_answer": "b. 20",
+        "id": 34
+      },
+      {
+        "question": "What is the purpose of the 'and' operator in Pascal?",
+        "options": [
+          "a. Logical AND",
+          "b. Bitwise AND",
+          "c. Logical OR",
+          "d. Bitwise OR"
+        ],
+        "correct_answer": "a. Logical AND",
+        "id": 35
+      },
+      {
+        "question": "Which of the following is NOT a valid Pascal comment?",
+        "options": [
+          "a. {This is a comment}",
+          "b. (*This is a comment*)",
+          "c. /This is a comment/",
+          "d. //This is a comment"
+        ],
+        "correct_answer": "c. /This is a comment/",
+        "id": 36
+      },
+      {
+        "question": "What is the purpose of the 'or' operator in Pascal?",
+        "options": [
+          "a. Logical OR",
+          "b. Bitwise OR",
+          "c. Logical AND",
+          "d. Bitwise AND"
+        ],
+        "correct_answer": "a. Logical OR",
+        "id": 37
+      },
+      {
+        "question": "Which of the following is NOT a valid Pascal data type?",
+        "options": [
+          "a. integer",
+          "b. real",
+          "c. char",
+          "d. boolean"
+        ],
+        "correct_answer": "d. boolean",
+        "id": 38
+      },
+      {
+        "question": "What is the purpose of the 'xor' operator in Pascal?",
+        "options": [
+          "a. Logical XOR",
+          "b. Bitwise XOR",
+          "c. Logical AND",
+          "d. Bitwise AND"
+        ],
+        "correct_answer": "b. Bitwise XOR",
+        "id": 39
+      },
+      {
+        "question": "What is the purpose of the 'mod' operator in Pascal?",
+        "options": [
+          "a. Computes the modulus of two numbers",
+          "b. Performs integer division",
+          "c. Computes the square of a number",
+          "d. Computes the absolute value of a number"
+        ],
+        "correct_answer": "a. Computes the modulus of two numbers",
+        "id": 40
+      },
+      {
+        "question": "What is the purpose of the 'div' operator in Pascal?",
+        "options": [
+          "a. Performs integer division",
+          "b. Computes the modulus of two numbers",
+          "c. Computes the square of a number",
+          "d. Computes the absolute value of a number"
+        ],
+        "correct_answer": "a. Performs integer division",
+        "id": 41
+      },
+      {
+        "question": "What is the output of the following Pascal code?\nProgram Test;\nVar x: integer;\nBegin\n  x := 5;\n  write('The value of x is ', x);\nEnd.",
+        "options": [
+          "a. The value of x is 5",
+          "b. 5",
+          "c. Error: 'x' is not defined",
+          "d. No output"
+        ],
+        "correct_answer": "a. The value of x is 5",
+        "id": 42
+      },
+      {
+        "question": "What is the purpose of the 'shl' operator in Pascal?",
+        "options": [
+          "a. Performs left shift",
+          "b. Performs right shift",
+          "c. Computes the square of a number",
+          "d. Computes the cube of a number"
+        ],
+        "correct_answer": "a. Performs left shift",
+        "id": 43
+      },
+      {
+        "question": "What is the purpose of the 'shr' operator in Pascal?",
+        "options": [
+          "a. Performs right shift",
+          "b. Performs left shift",
+          "c. Computes the square of a number",
+          "d. Computes the cube of a number"
+        ],
+        "correct_answer": "a. Performs right shift",
+        "id": 44
+      },
+      {
+        "question": "What is the output of the following Pascal code?\nProgram Test;\nBegin\n  writeln('Hello, World!');\nEnd.",
+        "options": [
+          "a. Hello, World!",
+          "b. Error: 'writeln' procedure not defined",
+          "c. Error: ';' expected but 'end' found",
+          "d. No output"
+        ],
+        "correct_answer": "a. Hello, World!",
+        "id": 45
+      },
+      {
+        "question": "What is the purpose of the 'repeat...until' loop in Pascal?",
+        "options": [
+          "a. Executes a block of statements while a condition is true",
+          "b. Executes a block of statements until a condition is true",
+          "c. Executes a block of statements a fixed number of times",
+          "d. Executes a block of statements based on a condition"
+        ],
+        "correct_answer": "b. Executes a block of statements until a condition is true",
+        "id": 46
+      },
+      {
+        "question": "What is the purpose of the 'for' loop in Pascal?",
+        "options": [
+          "a. Executes a block of statements while a condition is true",
+          "b. Executes a block of statements until a condition is true",
+          "c. Executes a block of statements a fixed number of times",
+          "d. Executes a block of statements based on a condition"
+        ],
+        "correct_answer": "c. Executes a block of statements a fixed number of times",
+        "id": 47
+      },
+      {
+        "question": "What is the purpose of the 'while' loop in Pascal?",
+        "options": [
+          "a. Executes a block of statements while a condition is true",
+          "b. Executes a block of statements until a condition is true",
+          "c. Executes a block of statements a fixed number of times",
+          "d. Executes a block of statements based on a condition"
+        ],
+        "correct_answer": "a. Executes a block of statements while a condition is true",
+        "id": 48
+      },
+      {
+        "question": "What is the purpose of the 'case' statement in Pascal?",
+        "options": [
+          "a. Executes a block of statements while a condition is true",
+          "b. Executes a block of statements until a condition is true",
+          "c. Executes a block of statements based on a condition",
+          "d. Executes a block of statements a fixed number of times"
+        ],
+        "correct_answer": "c. Executes a block of statements based on a condition",
+        "id": 49
+      },
+      {
+        "question": "What is the purpose of the 'break' statement in Pascal?",
+        "options": [
+          "a. Exits a loop or case statement",
+          "b. Continues to the next iteration of a loop",
+          "c. Jumps to a specific location in the code",
+          "d. Terminates the program"
+        ],
+        "correct_answer": "a. Exits a loop or case statement",
+        "id": 50
+      },
+      {
+        "question": "What is the purpose of the 'continue' statement in Pascal?",
+        "options": [
+          "a. Exits a loop or case statement",
+          "b. Continues to the next iteration of a loop",
+          "c. Jumps to a specific location in the code",
+          "d. Terminates the program"
+        ],
+        "correct_answer": "b. Continues to the next iteration of a loop",
+        "id": 51
+      },
+      {
+        "question": "What is the purpose of the 'goto' statement in Pascal?",
+        "options": [
+          "a. Exits a loop or case statement",
+          "b. Continues to the next iteration of a loop",
+          "c. Jumps to a specific location in the code",
+          "d. Terminates the program"
+        ],
+        "correct_answer": "c. Jumps to a specific location in the code",
+        "id": 52
+      },
+      {
+        "question": "Which keyword is used to define a user-defined type in Pascal?",
+        "options": [
+          "a. type",
+          "b. typedef",
+          "c. define",
+          "d. class"
+        ],
+        "correct_answer": "a. type",
+        "id": 53
+      },
+      {
+        "question": "What is the purpose of the 'record' type in Pascal?",
+        "options": [
+          "a. To define a list of constants",
+          "b. To define a data structure with multiple fields",
+          "c. To define a function",
+          "d. To define a variable"
+        ],
+        "correct_answer": "b. To define a data structure with multiple fields",
+        "id": 54
+      },
+      {
+        "question": "What is the purpose of the 'with' statement in Pascal?",
+        "options": [
+          "a. To create a new scope",
+          "b. To include external files",
+          "c. To simplify access to fields of a record",
+          "d. To declare variables"
+        ],
+        "correct_answer": "c. To simplify access to fields of a record",
+        "id": 55
+      }
+    ]
+  }
+
+
+
+

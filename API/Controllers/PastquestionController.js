@@ -2,12 +2,14 @@
 const GES101 = require('../Utils/ges101.json')
 const GES103 = require('../Utils/ges103.json')
 const CSC280 = require('../Utils/csc280.json')
+const CSC288 = require('../Utils/csc288.json')
 
 //Quiz Data
 const quizData = {
                   'ges101': GES101,
                   'ges103': GES103,
-                  'csc280': CSC280
+                  'csc280': CSC280,
+                  'csc288': CSC288,
                 } 
 
 // Function to shuffle an array
