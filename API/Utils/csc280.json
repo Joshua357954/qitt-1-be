@@ -38,6 +38,7 @@
     },
     {
       "question": "Is a symbol used for",
+      "image":"https://f4.bcbits.com/img/a3104669527_16.jpg",
       "options": [
         "a) Decision",
         "b) Start",
@@ -314,7 +315,7 @@
     },
     {
       "question": "What is the output of the following Fortran code:",
-      "code": true,
+      "code": "Q27",
       "code_snippet": "PROGRAM TEST\nINTEGER :: I\nI = 5\nPRINT *, I**2\nEND PROGRAM TEST",
       "options": [
         "a) 10",
@@ -604,4 +605,3 @@
     }
   ]
 }
-  
