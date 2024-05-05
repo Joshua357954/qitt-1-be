@@ -50,7 +50,8 @@ function submitQuizAnswers (req, res)  {
 
     console.log(question)
     return {
-            question: index + 1,
+            question_no: index + 1,
+            question:question.question,
             userAnswers: userAnswers[qid],
             correctAnswer: question.correct_answer, 
             isCorrect: userAnswers[qid] == question.correct_answer
