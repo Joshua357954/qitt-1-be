@@ -1,10 +1,10 @@
 const express = require("express");
 const cors = require("cors");
 const app = express();
-const db = require("../main/Database/index.js");
+const db = require("./main/Database/index.js");
 const User = db.User;
 const port = process.env.PORT || 4000;
-const ApiRoute = require("../main/MainRouter.js");
+const ApiRoute = require("./main/MainRouter.js");
 // require('./API/Controllers/AssignmentController.js')
 
 app.use(cors());
